@@ -1,5 +1,7 @@
 import pytest
+
 from app.services.chunking import split_text
+
 
 def test_empty_text_returns_no_chunks():
     assert split_text("   ") == []

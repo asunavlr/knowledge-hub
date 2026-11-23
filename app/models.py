@@ -1,9 +1,12 @@
 from datetime import datetime
+
 from pgvector.sqlalchemy import Vector
 from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+
 from app.core.config import get_settings
 from app.db import Base
+
 
 class Document(Base):
     __tablename__ = "documents"

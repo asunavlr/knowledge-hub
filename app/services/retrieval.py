@@ -1,6 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
+
 from app.models import Document, DocumentChunk
+
 
 def retrieve_chunks(db: Session, embedding: list[float], top_k: int):
     distance = DocumentChunk.embedding.cosine_distance(embedding)

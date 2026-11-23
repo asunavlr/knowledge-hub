@@ -1,5 +1,6 @@
 import re
 
+
 def split_text(text: str, chunk_size: int = 1000, overlap: int = 150) -> list[str]:
     if chunk_size <= 0:
         raise ValueError("chunk_size must be greater than zero")
